@@ -36,27 +36,29 @@
     <!-- Contenido principal -->
     <main>
         <!-- Seccion Hero con video de fondo -->
-        <section>
-            <video>
+        <section class="relative min-h-[550px] flex items-center justify-center overflow-hidden py-20 px-6">
+            <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover -z-10">
                 <source src="assets/video/video-enfermero2.mp4" type="video/mp4">
                 Tu navegador no soporta videos HTML5.
             </video>
-            <!-- Capa oscura "overlay" -->
-            <div></div>
+            <!-- Capa oscura "overlay" (bg-slate-900/70 oscurece el video un 70% para que las letras resalten con claridad)-->
+            <div class="absolute inset-0 bg-slate-900/50 -z-10"></div>
             <!-- Contenido central -->
-            <div>
-                <span>
+            <div class="relative z-10 max-w-4xl mx auto text-center text-white">
+                <span class="text-xs font-semibold uppercase tracking-widest bg-emerald-500/30 text-emerald-200 px-3 py-1 rounded-full border border-emerald-400/30 ">
                     Atención especializada & Equipamiento
                 </span>
-                <h1>
+                <!-- Titulo principal -->
+                <h1 class="text-3xl md:text-4xl font-extrabold mt-4 mb-6 leading-tight">
                     Cuidado Enfermero Profesional e Integral
                 </h1>
-                <p>
+                <p class="text-emerald-100 text-base md:text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
                     Servicios de Alta complegidad y asistencia domiciliaria
                 </p>
-                <div>
-                    <a href="pages/contacto.html">Solicitar Atención</a>
-                    <a href="pages/equipos.html">Ver Equipos</a>
+                <!-- Botones de acción -->
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="pages/contacto.html" class="bg-emerald-400 text-slate-900 font-semibold px-6 py-6 py-3 rounded-xl shadow-xl hover:bg-emerald-300 transition">Solicitar Atención</a>
+                    <a href="pages/equipos.html" class="bg-white/10 backdrop-blur-sms text-white font-medium px-6 py-3 rounded-xl border border-white/20 hover:bg-white/20 transition">Ver Equipos</a>
                 </div>
             </div>
 
