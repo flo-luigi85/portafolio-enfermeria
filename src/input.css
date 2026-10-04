@@ -1,11 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  body {
-    font-family: 'Poppins', sans-serif;
-  }
+/* 1. Header y Navegación */
+.header-contenedor {
+  @apply bg-white/90 backdrop-blur-md border-b border-emerald-100 sticky top-0 z-50 shadow-sm;
+}
+
+.header-envuelve {
+  @apply max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4;
+}
+
+.logo-marca {
+  @apply flex items-center gap-2 text-xl font-bold text-emerald-700;
+}
+
+.nav-link {
+  @apply w-full md:w-auto text-slate-600 font-semibold py-2.5 px-4 block rounded-xl bg-emerald-500/30 md:bg-transparent hover:bg-emerald-200/30 transition;
+}
+
+.nav-link-active {
+  @apply text-emerald-600;
+}
+
+/* 2. Sección Hero */
+.hero-section {
+  @apply relative min-h-[550px] flex items-center justify-center overflow-hidden py-20 px-6;
+}
+
+.hero-capa-oscura {
+  @apply absolute inset-0 bg-slate-900/50 -z-10;
+}
+
+.hero-span {
+  @apply inline-block text-[10px] sm:text-xs font-semibold uppercase tracking-normal sm:tracking-widest bg-emerald-500/30 text-emerald-200 px-3 py-1 rounded-full border border-emerald-400/30 max-w-full;
+}
+
+.hero-titulo {
+  @apply text-3xl md:text-4xl font-extrabold mt-4 mb-6 leading-tight text-white;
+}
+
+.hero-subtitulo {
+  @apply text-emerald-100 text-base md:text-lg mb-8 leading-relaxed max-w-2xl mx-auto;
+}
+
+/* 3. Botones */
+.btn-primario {
+  @apply w-full sm:w-auto text-center font-semibold px-6 py-3 rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-sm sm:text-base bg-emerald-400 text-slate-900 hover:bg-emerald-300;
+}
+
+.btn-secundario {
+  @apply w-full sm:w-auto text-center font-semibold px-6 py-3 rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-sm sm:text-base bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20;
+}
+
+/* 4. Tarjetas de Servicios */
+.section-titulo {
+  @apply text-2xl md:text-4xl font-bold text-emerald-600 mb-4;
+}
+
+.section-subtitulo {
+  @apply text-slate-600 text-base md:text-lg;
+}
+
+.card-servicios {
+  @apply bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl cursor-pointer text-center;
 }
