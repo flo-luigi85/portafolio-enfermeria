@@ -16,7 +16,7 @@
 }
 
 .nav-link {
-  @apply w-full md:w-auto text-slate-600 font-semibold py-2.5 px-4 block rounded-xl bg-emerald-500/30 md:bg-transparent hover:bg-emerald-200/30 transition;
+  @apply w-full md:w-auto text-slate-600 font-semibold py-2 px-3 block rounded-xl bg-emerald-500/30 md:bg-transparent hover:bg-emerald-200/30 transition;
 }
 
 .nav-link-active {
@@ -64,4 +64,59 @@
 
 .card-servicios {
   @apply bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl cursor-pointer text-center;
+}
+
+/*Sección llamado a la Atención*/
+.cta-section {
+    @apply py-16 bg-emerald-700 text-white px-6;
+}
+
+.btn-cta-primario {
+    @apply w-full sm:w-auto bg-white text-emerald-900 font-bold px-6 py-3 rounded-xl shadow-md hover:bg-emerald-50 transition text-sm text-center block;
+}
+
+.btn-cta-secundario {
+    @apply w-full sm:w-auto bg-emerald-800 text-white font-semibold px-6 py-3 rounded-xl border border-emerald-500/40 hover:bg-emerald-600 transition text-sm text-center block;
+}
+/* 6 Seccion contacto*/
+.contact-section{
+    @apply py-16 md:py-24 bg-white px-6;
+}
+
+.contact-badge{
+    @apply inline-block px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-semibold rounded-b-full mb-3;
+}
+
+.contact-card-wa {
+    @apply p-6 bg-slate-50 border border-slate-200/80 rounded-2xl space-y-4;
+}
+
+.btn-whatsapp {
+    @apply w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-4 rounded-xl text-center block transition shadow-xs text-sm;
+}
+
+.contact-form-contenedor {
+    @apply bg-slate-50/80 p-6 md:p-8 rounded-3xl border border-slate-200/80 shadow-xs;
+}
+
+.form-label {
+    @apply block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2;
+}
+
+.form-input {
+    @apply w-full px-4 py-3 bg-white border border-slate-200 rounded-xl focus:ring-emerald-500 focus:border-emerald-500 outline-none transition text-slate-800 text-sm;
+}
+
+.btn-submit {
+    @apply w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3.5 px-6 rounded-xl transition shadow-md hover:shadow-lg text-sm cursor-pointer;
+}
+
+/*6 Footer*/
+
+.footer-contenedor {
+    @apply bg-slate-900 text-slate-400 py-12 px-6 border-t border-slate-800 text-sm mt-auto;
+}
+
+.footer-link {
+    @apply hover:text-emerald-400 transition;
 }

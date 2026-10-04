@@ -22,11 +22,12 @@
             <nav class="w-full md:w-auto">
                 <!-- hidden md:flex ((oculta la lista en celulares)) -->
                 <ul
-                    class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 text-sm text-center w-full">
+                    class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-sm text-center w-full">
                     <li class="w-full md:w-auto"><a href="index.html" class="nav-link nav-link-active">Inicio</a></li>
                     <li class="w-full md:w-auto"><a href="pages/servicios.html" class="nav-link">Servicios</a></li>
                     <li class="w-full md:w-auto"><a href="pages/equipos.html" class="nav-link">Equipos Médicos</a></li>
-                    <li class="w-full md:w-auto"><a href="pages/sobre-mi.html" class="nav-link">Sobre nosotros</a></li>
+                    <li class="w-full md:w-auto"><a href="pages/sobre-nosotros.html" class="nav-link">Sobre nosotros</a>
+                    </li>
                     <li class="w-full md:w-auto"><a href="pages/formacion.html" class="nav-link">Formación</a></li>
                     <li class="w-full md:w-auto"><a href="pages/contacto.html" class="nav-link">Contacto</a></li>
                 </ul>
@@ -44,7 +45,7 @@
             <!-- Capa oscura "overlay" (bg-slate-900/70 oscurece el video un 70% para que las letras resalten con claridad)-->
             <div class=""></div>
             <!-- Contenido central -->
-            <div class="relative z-10 max-w-4xl mx auto text-center">
+            <div class="relative z-10 max-w-4xl mx-auto text-center">
                 <span class="hero-span">
                     Atención especializada & Equipamiento
                 </span>
@@ -64,46 +65,124 @@
             </div>
 
         </section>
+
+
+        <!-- Seccion de servicios destacados -->
+        <section class="py-16 md:py-24 bg-slate-50 px-6">
+            <!-- --Encabezado de la seccion -->
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <h2 class="section-titulo">Nuestros Servicios clínicos</h2>
+                <p class="section-subtitulo">
+                    Atención personalizada de baja, mediana y alta complegidad según las necesidades del paciente.
+                </p>
+            </div>
+            <!-- contenedor para las targetas / responsivo de uan 1 columna en mobil-->
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Cuidados criticos / complejos -->
+                <div class="card-servicios">
+                    <div class="text-4xl mb-4">🫁</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Cuidados de alta complegidad</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Atención y monitorio continuo de pacientes
+                        críticos, manejo de traqueostomías, vía aérea y sondas por
+                        especialista en Terapia Intensiva.</p>
+
+                </div>
+                <!-- Atención domiciliaria -->
+                <div class="card-servicios">
+                    <div class="text-4xl mb-4">🩺</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Atención domiciliaria Integral</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Asistencia clínica continua,
+                        administración de medicamentos EV/IM, curaciones avanzadas y seguimiento
+                        postoperatorio.</p>
+                </div>
+                <!-- Capacitación a Familias -->
+                <div class="card-servicios">
+                    <div class="text-4xl mb-4">🎓</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Capacitación y Docencia Familiar</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Asesoramiento y formación a familias y
+                        cuidadores sobre el manejo, postura y cuidados cotidianos del paciente dependiente.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Seccion de llamado de Atención -->
+        <section class="cta-section">
+            <div class="max-w4xl mx-auto text-center space-y-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-white">
+                    ¿Acompañamiento clínico o equipamiento en el hogar?
+                </h2>
+                <p class="text-emerald-100 max-w-2xl mx-auto text-sm md:text-base">
+                    Coordinamos planes de cuidado a medida e internación domiciliaria con personal matriculado y tecnología de alta precisión.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+                    <a href="pages/contacto.html" class="btn-cta-primario">
+                        Solicitar Presupuesto
+                    </a>
+                    <a href="https://wa.me/#" target="_blank" class="btn-cta-secundario">
+                        Consultar por WhatsApp
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
     </main>
-
-    <!-- Seccion de servicios destacados -->
-    <section class="py-16 md:py-24 bg-slate-50 px-6">
-        <!-- --Encabezado de la seccion -->
-        <div class="max-w-3xl mx-auto text-center mb-12">
-            <h2 class="section-titulo">Nuestros Servicios clínicos</h2>
-            <p class="section-subtitulo">
-                Atención personalizada de baja, mediana y alta complegidad según las necesidades del paciente.
-            </p>
+    <!-- Footer detallado -->
+    <footer class="footer-contenedor">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-19">
+            <!-- columna 1 Marca -->
+            <div class="space-y-3">
+                <a href="index.html" class="flex items-center gap-2 text-lg font-bold text-white">
+                    <span class="text-emerald-500">🩺</span> CuidadoEnfermero
+                </a>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Atención de Enfermería Profesional, cuidado de alta complejidad y equipamiento clínico a domicilio.
+                </p>
+            </div>
+            <!-- Columna 2 Navegación Rápida -->
+             <div>
+                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Navegación</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="index.html" class="footer-link">Inicio</a></li>
+                    <li><a href="pages/servicios.html" class="footer-link">Servicios</a></li>
+                    <li><a href="pages/equipos.html" class="footer-link">Equipos Médicos</a></li>
+                    <li><a href="pages/sobre-nosotros.html" class="footer-link">Sobre nosotros</a></li>
+                    <li><a href="pages/formacion.html" class="footer-link">Formación & Títulos</a></li>
+                </ul>
+             </div>
+             <!-- Columna 3 Especialidades -->
+             <div>
+                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Especialidades</h4>
+                <ul class="space-y-2 text-xs text-slate-400">
+                    <li>Cuidados Intensivos / UTI</li>
+                    <li>Internación Domiciliaria</li>
+                    <li>Curaciones Complejas</li>
+                    <li>Monitoreo Multiparamétrico</li>
+                </ul>
+             </div>
+             <!-- Columna 4 Contacto Rápido -->
+              <div>
+                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Contacto</h4>
+                <ul class="space-y-2 text-xs">
+                    <li class="flex items-center gap2">
+                        <span>📍</span> Buenos Aires, Argentina
+                    </li>
+                    <li class="flex items-center gap2">
+                        <span>💬</span> <a href="https://wa.me/#" target="_blank" class="footer-link">Atención vía WhatsApp</a>
+                    </li>
+                    <li>
+                        <a href="pages/contacto.html" class="inline-block mt-2 px-3 py-1.5 bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 rounded-lg text-sx font-medium hover:bg-emerald-600/30 transition">
+                            Enviar Consulta →
+                        </a>
+                    </li>
+                </ul>
+              </div>
         </div>
-        <!-- contenedor para las targetas / responsivo de uan 1 columna en mobil-->
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Cuidados criticos / complejos -->
-            <div class="card-servicios">
-                <div class="text-4xl mb-4">🫁</div>
-                <h3 class="text-xl font-bold text-slate-800 mb-3">Cuidados de alta complegidad</h3>
-                <p class="text-slate-600 leading-relaxed text-sm">Atención y monitorio continuo de pacientes
-                    críticos, manejo de traqueostomías, vía aérea y sondas por
-                    especialista en Terapia Intensiva.</p>
-
-            </div>
-            <!-- Atención domiciliaria -->
-            <div class="card-servicios">
-                <div class="text-4xl mb-4">🩺</div>
-                <h3 class="text-xl font-bold text-slate-800 mb-3">Atención domiciliaria Integral</h3>
-                <p class="text-slate-600 leading-relaxed text-sm">Asistencia clínica continua,
-                    administración de medicamentos EV/IM, curaciones avanzadas y seguimiento
-                    postoperatorio.</p>
-            </div>
-            <!-- Capacitación a Familias -->
-            <div
-                class="card-servicios">
-                <div class="text-4xl mb-4">🎓</div>
-                <h3 class="text-xl font-bold text-slate-800 mb-3">Capacitación y Docencia Familiar</h3>
-                <p class="text-slate-600 leading-relaxed text-sm">Asesoramiento y formación a familias y
-                    cuidadores sobre el manejo, postura y cuidados cotidianos del paciente dependiente.</p>
-            </div>
+        <!-- Desarrollado por Flo.luigi85@gmail.com -->
+        <div class="max-w-6xl mx-auto pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+            <p>© 2026 CuidadoEnfermero. Todos los derechos reservados.</p>
+            <p>Diseñado HTML & Tailwind CSS</p>
         </div>
-    </section>
+    </footer>
 </body>
 
 </html>
