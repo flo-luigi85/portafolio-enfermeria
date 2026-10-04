@@ -12,23 +12,22 @@
 <body class="bg-slate-50 text-slate-700 antialiased min-h-screen flex flex-col">
     <!--Encabezado y Navegación-->
     <header class="bg-white/90 backdrop-blur-md border-b border-emerald-100 sticky top-0 z-50 shadow-sm">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
             <!-- Logotipo del sitio (mas adelante cambio por un logo) -->
-            <a href="index.html" class="text-xl font-bold text-emerald-800 tracking-tight flex items-center gap-2">
-                <span class="w-3 h-3 bg-emerald-500 rounded-full inline-block animate pulse"></span>
-                Enfermería & Equipos
+            <a href="index.html" class="flex items-center gap-2 text-xl font-bold text-emerald-700">
+                <span class="text-emerald-600 text-xl">🩺</span>
+                CuidadoEnfermero
             </a>
             <!-- Menu de navegacion -->
-            <nav>
+            <nav class="w-full md:w-auto">
                 <!-- hidden md:flex ((oculta la lista en celulares)) -->
-                <ul class="hidden md:flex space-x-6 text-sm font medium text-slate-600">
-                    <li><a href="index.html"
-                            class="text-emerald-600 font-semibold border-b-2 border-emerald-500 pb-1 ">Inicio</a></li>
-                    <li><a href="pages/sobre-mi.html" class="hover:text-emerald-600 transition ">Sobre mí</a></li>
-                    <li><a href="pages/servicios.html" class="hover:text-emerald-600 transition">Servicios</a></li>
-                    <li><a href="pages/equipos.html" class="hover:text-emerald-600 transition">Equipos Médicos</a></li>
-                    <li><a href="pages/formacion.html" class="hover:text-emerald-600 transition">Formación</a></li>
-                    <li><a href="pages/contacto.html" class="hover:text-emerald-600 transition">Contacto</a></li>
+                <ul class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 font-medium text-slate-600 text-sm text-center w-full">
+                    <li class="w-full md:w-auto"><a href="index.html" class="w-full md:w-auto text-emerald-600 font-semibold py-2.5 px-4 block rounded-xl bg-emerald-500/30 md:bg-transparent hover:bg-emerald-200/30 transition">Inicio</a></li>
+                    <li class="w-full md:w-auto"><a href="pages/servicios.html" class="w-full md:w-auto text-slate-600 font-semibold py-2.5 px-4 block rounded-xl bg-emerald-500/30 md:bg-transparent hover:bg-emerald-200/30 transition">Servicios</a></li>
+                    <li class="w-full md:w-auto"><a href="pages/equipos.html" class="w-full md:w-auto text-slate-600 font-semibold py-2.5 px-4 block rounded-xl bg-emerald-500/30 md:bg-transparent hover:bg-emerald-200/30 transition">Equipos Médicos</a></li>
+                    <li class="w-full md:w-auto"><a href="pages/sobre-mi.html" class="w-full md:w-auto text-slate-600 font-semibold py-2.5 px-4 block rounded-xl bg-emerald-500/30 md:bg-transparent hover:bg-emerald-200/30 transition">Sobre nosotros</a></li>
+                    <li class="w-full md:w-auto"><a href="pages/formacion.html" class="w-full md:w-auto text-slate-600 font-semibold py-2.5 px-4 block rounded-xl bg-emerald-500/30 md:bg-transparent hover:bg-emerald-200/30 transition">Formación</a></li>
+                    <li class="w-full md:w-auto"><a href="pages/contacto.html" class="w-full md:w-auto text-slate-600 font-semibold py-2.5 px-4 block rounded-xl bg-emerald-500/30 md:bg-transparent hover:bg-emerald-200/30 transition">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -56,9 +55,9 @@
                     Servicios de Alta complegidad y asistencia domiciliaria
                 </p>
                 <!-- Botones de acción -->
-                <div class="flex flex-wrap justify-center gap-4">
-                    <a href="pages/contacto.html" class="bg-emerald-400 text-slate-900 font-semibold px-6 py-6 py-3 rounded-xl shadow-xl hover:bg-emerald-300 transition">Solicitar Atención</a>
-                    <a href="pages/equipos.html" class="bg-white/10 backdrop-blur-sms text-white font-medium px-6 py-3 rounded-xl border border-white/20 hover:bg-white/20 transition">Ver Equipos</a>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-sm mx-auto sm:max-w-none">
+                    <a href="pages/contacto.html" class="w-full sm:w-auto text-center bg-emerald-400  text-slate-900 font-semibold px-6 py-6 py-3 rounded-xl shadow-xl hover:bg-emerald-300 transition text-sm sm:text-base">Solicitar Atención</a>
+                    <a href="pages/equipos.html" class="w-full sm:w-auto text-center bg-white/10  backdrop-blur-sms text-white font-semibold px-6 py-6 py-3 rounded-xl border border-white/20 hover:bg-white/20 transition text-sm sm:text-base">Ver Equipos</a>
                 </div>
             </div>
 
