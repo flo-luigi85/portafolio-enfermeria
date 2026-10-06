@@ -24,32 +24,191 @@
                 <ul
                     class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-sm text-center w-full">
                     <li class="w-full md:w-auto"><a href="../index.html" class="nav-link nav-link-active">Inicio</a></li>
-                    <li class="w-full md:w-auto"><a href="pages/servicios.html" class="nav-link">Servicios</a></li>
-                    <li class="w-full md:w-auto"><a href="pages/equipos.html" class="nav-link">Equipos Médicos</a></li>
-                    <li class="w-full md:w-auto"><a href="pages/sobre-nosotros.html" class="nav-link">Sobre nosotros</a></li>
-                    <li class="w-full md:w-auto"><a href="pages/formacion.html" class="nav-link">Formación</a></li>
-                    <li class="w-full md:w-auto"><a href="pages/contacto.html" class="nav-link">Contacto</a></li>
+                    <li class="w-full md:w-auto"><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li class="w-full md:w-auto"><a href="equipos.html" class="nav-link">Equipos Médicos</a></li>
+                    <li class="w-full md:w-auto"><a href="sobre-nosotros.html" class="nav-link">Sobre nosotros</a>
+                    </li>
+                    <li class="w-full md:w-auto"><a href="formacion.html" class="nav-link">Formación</a></li>
+                    <li class="w-full md:w-auto"><a href="contacto.html" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Contendo preincipal -->
-     <main>
-        <section>
-            <div>
-                <span>
+    <main class="grow">
 
+        <!-- Cabecera de pagina -->
+        <section class="page-heder">
+            <div class="max-w-4xl mx-auto text-center space-y-4">
+                <span class="page-header-marca mt-6">
+                    Atención e Informes
                 </span>
-                <h1>
-
+                <h1 class="text-xl md:text-5xl font-bold tracking-tight">
+                    Ponete en contacto con nosotros
                 </h1>
-                <p>
-                    
+                <p class="text-slate-300 text-sm md:text-base max-w-2xl mx-auto">
+                    Coordinamos asistencia domiciliaria, Asesoramiento clínica y provisión de eqipos médicos.
+                    Consultanos sin compromiso.
                 </p>
             </div>
         </section>
-        <section>
+
+        <!-- Empieza contacto -->
+        <section class="py-12 md:py-20 px-6">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <!-- Informacion de contacto -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-800 mb-3">Canales Directos</h2>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Respondemos tus enquietudes a la brevedad.Evaluamos cada caso de forma particular para
+                            coordinar la mejor cobertura médica.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Tarjeta WhatsApp -->
+                        <div class="info-card">
+                            <div class="info-card-icon-wa">
+                                <img src="../assets/icons/icon1.png" alt="Logo WhatsApp" class="w-8 h-8">
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-sm">WhatsApp Directo</h3>
+                                <p class="text-xs text-slate-500 mb-1">Coordinación e imprevistos</p>
+                                <a href="http://wa.me/#" target="_blank" class="text-xs font-semibold text-emerald-600 hover:underline">
+                                    Enviar mensaje por WhatsApp.
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta cobertura -->
+                        <div class="info-card">
+                            <div class="info-card-icon-slate">
+                                📍
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-sm">Área de Cobertura</h3>
+                                <p class="text-xs text-slate-500">Buenos Aires y zonas aledañas</p>
+                            </div>
+                        </div>
+
+                        <!-- Horarios -->
+                        <div class="info-card">
+                            <div class="info-card-icon-slate">
+                                ⏰
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-sm">Hoararios de coordianción</h3>
+                                <p class="text-xs text-slate-500">Lunes a Sábados de 08:00 a 20:00 hs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario derecho -->
+                <div class="lg:col-span-7 contact-form-contenedor">
+                    <form action="#" method="POST" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre acá" class="form-input">
+                            </div>
+                            <div>
+                                <label for="telefono" class="form-label">Teléfono / WhatsApp</label>
+                                <input type="tel" id="telefono" required placeholder="Ej: 1153176976" class="form-input" >
+                            </div>
+                        </div>
+                        <div>
+                            <label for=""></label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label for=""></label>
+                            <select name="" id="">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for=""></label>
+                            <textarea name="" id=""></textarea>
+                        </div>
+
+                        <button>
+                            Enviar Consulta
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
 
         </section>
-     </main>
+    </main>
+
+ <!-- Footer detallado -->
+    <footer class="footer-contenedor">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-19">
+            <!-- columna 1 Marca -->
+            <div class="space-y-3">
+                <a href="index.html" class="flex items-center gap-2 text-lg font-bold text-white">
+                    <span class="text-emerald-500">🩺</span> CuidadoEnfermero
+                </a>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Atención de Enfermería Profesional, cuidado de alta complejidad y equipamiento clínico a domicilio.
+                </p>
+            </div>
+            <!-- Columna 2 Navegación Rápida -->
+             <div>
+                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Navegación</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="index.html" class="footer-link">Inicio</a></li>
+                    <li><a href="pages/servicios.html" class="footer-link">Servicios</a></li>
+                    <li><a href="pages/equipos.html" class="footer-link">Equipos Médicos</a></li>
+                    <li><a href="pages/sobre-nosotros.html" class="footer-link">Sobre nosotros</a></li>
+                    <li><a href="pages/formacion.html" class="footer-link">Formación & Títulos</a></li>
+                </ul>
+             </div>
+             <!-- Columna 3 Especialidades -->
+             <div>
+                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Especialidades</h4>
+                <ul class="space-y-2 text-xs text-slate-400">
+                    <li>Cuidados Intensivos / UTI</li>
+                    <li>Internación Domiciliaria</li>
+                    <li>Curaciones Complejas</li>
+                    <li>Monitoreo Multiparamétrico</li>
+                </ul>
+             </div>
+             <!-- Columna 4 Contacto Rápido -->
+              <div>
+                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Contacto</h4>
+                <ul class="space-y-2 text-xs">
+                    <li class="flex items-center gap2">
+                        <span>📍</span> Buenos Aires, Argentina
+                    </li>
+                    <li class="flex items-center gap2">
+                        <span>💬</span> <a href="https://wa.me/#" target="_blank" class="footer-link">Atención vía WhatsApp</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html" class="inline-block mt-2 px-3 py-1.5 bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 rounded-lg text-sx font-medium hover:bg-emerald-600/30 transition">
+                            Enviar Consulta →
+                        </a>
+                    </li>
+                </ul>
+              </div>
+        </div>
+        <!-- Desarrollado por Flo.luigi85@gmail.com -->
+        <div class="max-w-6xl mx-auto pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+            <p>© 2026 CuidadoEnfermero. Todos los derechos reservados.</p>
+            <p>Diseñado HTML & Tailwind CSS</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
