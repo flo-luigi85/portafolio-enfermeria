@@ -25,7 +25,7 @@
                     class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-sm text-center w-full">
                     <li class="w-full md:w-auto"><a href="../index.html" class="nav-link nav-link-active">Inicio</a></li>
                     <li class="w-full md:w-auto"><a href="servicios.html" class="nav-link">Servicios</a></li>
-                    <li class="w-full md:w-auto"><a href="equipos.html" class="nav-link">Equipos Médicos</a></li>
+                    <li class="w-full md:w-auto"><a href="insumos.html" class="nav-link">Insumos/Hospitalarios</a></li>
                     <li class="w-full md:w-auto"><a href="sobre-nosotros.html" class="nav-link">Sobre nosotros</a>
                     </li>
                     <li class="w-full md:w-auto"><a href="formacion.html" class="nav-link">Formación</a></li>
@@ -39,9 +39,9 @@
     <main class="grow">
 
         <!-- Cabecera de pagina -->
-        <section class="page-heder">
+        <section class="page-header">
             <div class="max-w-4xl mx-auto text-center space-y-4">
-                <span class="page-header-marca mt-6">
+                <span class="page-header-marca mt-3">
                     Atención e Informes
                 </span>
                 <h1 class="text-xl md:text-5xl font-bold tracking-tight">
@@ -120,26 +120,26 @@
                             </div>
                         </div>
                         <div>
-                            <label for=""></label>
-                            <input type="text">
+                            <label for="email" class="form-label">Correo Electronico</label>
+                            <input type="email" id="email" name="email" required placeholder="Ej: flo.luigi85@gmail.com" class="form-input">
                         </div>
                         <div>
-                            <label for=""></label>
-                            <select name="" id="">
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
+                            <label for="servicio" class="form-label">Motivo de Consulta</label>
+                            <select name="servicio" id="servicio" class="form-input">
+                                <option value="">Selecciona una opción..</option>
+                                <option value="internación">Cuidado en Internación Domiciliaria</option>
+                                <option value="curaciones">Curaciones / Procedimientos Complejos</option>
+                                <option value="equipos">Alquiler / Venta de Insumos Médicos/Enfermería</option>
+                                <option value="otro">Otro tipo de consulta</option>
                             </select>
                         </div>
 
                         <div>
-                            <label for=""></label>
-                            <textarea name="" id=""></textarea>
+                            <label for="mensaje" class="form-label">Detalles de la consulta</label>
+                            <textarea name="mensaje" id="mensaje" rows="4" placeholder="Describe brevemente el diagnóstico, los requirimientos o el equipo/insumo de interés..." class="form-input"></textarea>
                         </div>
 
-                        <button>
+                        <button type="submit" class="btn-submit">
                             Enviar Consulta
                         </button>
                     </form>
@@ -160,7 +160,7 @@
                     <span class="text-emerald-500">🩺</span> CuidadoEnfermero
                 </a>
                 <p class="text-slate-400 text-xs leading-relaxed">
-                    Atención de Enfermería Profesional, cuidado de alta complejidad y equipamiento clínico a domicilio.
+                    Atención de Enfermería Profesional, cuidado de alta complejidad y Insumos Hospitalarios a domicilio.
                 </p>
             </div>
             <!-- Columna 2 Navegación Rápida -->
@@ -169,7 +169,7 @@
                 <ul class="space-y-2 text-xs">
                     <li><a href="index.html" class="footer-link">Inicio</a></li>
                     <li><a href="pages/servicios.html" class="footer-link">Servicios</a></li>
-                    <li><a href="pages/equipos.html" class="footer-link">Equipos Médicos</a></li>
+                    <li><a href="pages/insumos.html" class="footer-link">Insumos/Hospitalarios</a></li>
                     <li><a href="pages/sobre-nosotros.html" class="footer-link">Sobre nosotros</a></li>
                     <li><a href="pages/formacion.html" class="footer-link">Formación & Títulos</a></li>
                 </ul>
