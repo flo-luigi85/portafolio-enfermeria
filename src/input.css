@@ -125,6 +125,12 @@
   
 }
 
+/* Seccion paginas internas (botones)*/
+
+.btn-page {
+  @apply w-full sm:w-auto text-center font-normal px-4 py-2 rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-sm sm:text-base bg-slate-700 text-white hover:bg-slate-500 cursor-pointer;
+  
+}
 
 /* Footer*/
 
