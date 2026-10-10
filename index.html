@@ -44,7 +44,7 @@
                 Tu navegador no soporta videos HTML5.
             </video>
             <!-- Capa oscura "overlay" (bg-slate-900/70 oscurece el video un 70% para que las letras resalten con claridad)-->
-            <div class=""></div>
+            <div class="hero-capa-oscura"></div>
             <!-- Contenido central -->
             <div class="relative z-10 max-w-4xl mx-auto text-center">
                 <span class="hero-span">
@@ -55,13 +55,13 @@
                     Cuidado Enfermero Profesional e Integral
                 </h1>
                 <p class="hero-subtitulo">
-                    Servicios de Alta complegidad y asistencia domiciliaria
+                    Servicios de Alta complejidad y asistencia domiciliaria
                 </p>
                 <!-- Botones de acción -->
                 <div
                     class="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-sm mx-auto sm:max-w-none ">
                     <a href="pages/contacto.html" class="btn-primario">Solicitar Atención</a>
-                    <a href="pages/equipos.html" class="btn-secundario">Ver Insumos</a>
+                    <a href="pages/insumos.html" class="btn-secundario">Ver Insumos</a>
                 </div>
             </div>
 
@@ -73,7 +73,7 @@
             <!-- --Encabezado de la seccion -->
             <div class="max-w-6xl mx-auto space-y-12">
                 <div class="text-center space-y-3">
-                    <span class="text-xs font-bold tracking-widest text-slate-800 uppercase">
+                    <span class="text-md font-bold tracking-widest text-slate-800 uppercase">
                         Soluciones Integrales 
                     </span>
                     <h2 class="section-titulo">
@@ -85,36 +85,42 @@
                 </div>
                 <!-- contenedor para las targetas / responsivo de uan 1 columna en mobil-->
                 <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Cuidados criticos / complejos -->
-                    <div class="card-servicios">
-                        <div class="text-4xl mb-4">🫁</div>
-                        <h3 class="text-xl font-bold text-slate-800 mb-3">Cuidados de alta complegidad</h3>
-                        <p class="text-slate-600 leading-relaxed text-sm">Atención y monitorio continuo de pacientes
-                            críticos, manejo de traqueostomías, vía aérea y sondas por
-                            especialista en Terapia Intensiva.</p>
-
-                    </div>
-                    <!-- Atención domiciliaria -->
+                    <!-- Cuidados domiciliarios -->
                     <div class="card-servicios">
                         <div class="text-4xl mb-4">🩺</div>
-                        <h3 class="text-xl font-bold text-slate-800 mb-3">Atención domiciliaria Integral</h3>
-                        <p class="text-slate-600 leading-relaxed text-sm">Asistencia clínica continua,
-                            administración de medicamentos EV/IM, curaciones avanzadas y seguimiento
-                            postoperatorio.</p>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Enfermería Domiciliaria</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm pb-8">Asistencia profesional, administración de medicamentos, control de signos vitales y curaciones con seguimiento personalizado.</p>
+                        <a href="pages/servicios.html" class="btn-primario">
+                            Ver servicios <span>→</span>
+                        </a>
                     </div>
-                    <!-- Capacitación a Familias -->
+                    <!-- Insumos Hospitalarios -->
+                    <div class="card-servicios">
+                        <div class="text-4xl mb-4">📦</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Insumos Hospitalarios</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm pb-8">
+                            Venta directa de material descartable, kits de curación, elementos de protección y descatables para pacientes e instituciones.
+                        </p>
+                        <a href="pages/insumos.html" class="btn-primario">
+                            Ver catalogo <span>→</span>
+                        </a>
+                    </div>
+                    <!-- Capacitación y Asesoramiento -->
                     <div class="card-servicios">
                         <div class="text-4xl mb-4">🎓</div>
-                        <h3 class="text-xl font-bold text-slate-800 mb-3">Capacitación y Docencia Familiar</h3>
-                        <p class="text-slate-600 leading-relaxed text-sm">Asesoramiento y formación a familias y
-                            cuidadores sobre el manejo, postura y cuidados cotidianos del paciente dependiente.</p>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Formación & Asesoría</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm pb-8">Capacitación para cuidadores, asesoramiento técnico en manejo de insumos e instrucción para la atención en el hogar.</p>
+                        
+                            <a href="pages/formacions.html" class="btn-primario">
+                            Saber más <span>→</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Seccion de llamado de Atención -->
         <section class="cta-section">
-            <div class="max-w4xl mx-auto text-center space-y-6">
+            <div class="max-w4-xl mx-auto text-center space-y-6">
                 <h2 class="text-2xl md:text-3xl font-bold text-white">
                     ¿Necesitas atención clínica o Insumos Hospitalarios?
                 </h2>
@@ -123,7 +129,7 @@
                     directa y atención profesional.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
-                    <a href="pages/contacto.html" class="btn-cta-primario">
+                    <a href="pages/insumos.html" class="btn-cta-primario">
                         Ver Catálogo de Insumos
                     </a>
                     <a href="https://wa.me/#" target="_blank" class="btn-cta-secundario">
@@ -137,7 +143,7 @@
     </main>
     <!-- Footer detallado -->
     <footer class="footer-contenedor">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-19">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-20">
             <!-- columna 1 Marca -->
             <div class="space-y-3">
                 <a href="index.html" class="flex items-center gap-2 text-lg font-bold text-white">
@@ -172,7 +178,7 @@
             <div>
                 <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Contacto</h4>
                 <ul class="space-y-2 text-xs">
-                    <li class="flex items-center gap2">
+                    <li class="flex items-center gap-2">
                         <span>📍</span> Buenos Aires, Argentina
                     </li>
                     <li class="flex items-center gap2">
@@ -181,7 +187,7 @@
                     </li>
                     <li>
                         <a href="pages/contacto.html"
-                            class="inline-block mt-2 px-3 py-1.5 bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 rounded-lg text-sx font-medium hover:bg-emerald-600/30 transition">
+                            class="inline-block mt-2 px-3 py-1.5 bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 rounded-lg text-xs font-medium hover:bg-emerald-600/30 transition">
                             Enviar Consulta →
                         </a>
                     </li>
