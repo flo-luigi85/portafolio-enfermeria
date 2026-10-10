@@ -6,7 +6,7 @@
 
 /* 1. Header y Navegación */
 .header-contenedor {
-  @apply bg-white/900 text-white sticky top-0 z-50 shadow-md;
+  @apply bg-white/900 backdrop-blur-md border-b border-emerald-100 sticky top-0 z-50 shadow-sm;
 }
 
 .header-envuelve {
