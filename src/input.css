@@ -73,15 +73,15 @@
 
   /*Sección llamado a la Atención*/
   .cta-section {
-    @apply bg-emerald-700 px-6 py-16 text-white;
+    @apply bg-emerald-600 px-6 py-16 text-white;
   }
 
   .btn-cta-primario {
-    @apply block w-full rounded-xl bg-white px-6 py-3 text-center text-sm font-bold text-emerald-900 shadow-md transition hover:bg-emerald-50 sm:w-auto;
+    @apply block w-full rounded-xl border-slate-200/80 bg-white px-6 py-3 text-center text-sm font-bold text-emerald-900 shadow-md transition-all duration-300 hover:-translate-y-1 hover:bg-white/20 hover:text-white sm:w-auto;
   }
 
   .btn-cta-secundario {
-    @apply block w-full rounded-xl border border-emerald-500/40 bg-emerald-800 px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-emerald-600 sm:w-auto;
+    @apply block w-full rounded-xl border border-emerald-500/40 bg-emerald-800 px-6 py-3 text-center text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white/80 hover:text-slate-900 sm:w-auto;
   }
 
   /*===================================*/
