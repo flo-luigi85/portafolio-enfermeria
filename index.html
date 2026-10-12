@@ -1,206 +1,285 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon1.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon1.ico" />
     <title>Portafolio Profesional | Enfermería & Insumos</title>
-    <link rel="stylesheet" href="dist/output.css">
-</head>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
 
-<body class="bg-slate-50 text-slate-700 antialiased min-h-screen flex flex-col overflow-x-hidden">
+  <body
+    class="flex min-h-screen flex-col overflow-x-hidden bg-slate-50 text-slate-700 antialiased"
+  >
     <!--Encabezado y Navegación-->
     <header class="header-contenedor">
-        <div class="header-envuelve">
-            <!-- Logotipo del sitio (mas adelante cambio por un logo) -->
-            <a href="index.html" class="logo-marca">
-                <span class="text-xl">🩺</span>
-                CuidadoEnfermero
-            </a>
-            <!-- Menu de navegacion -->
-            <nav class="w-full md:w-auto">
-                <!-- hidden md:flex ((oculta la lista en celulares)) -->
-                <ul
-                    class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-sm text-center w-full">
-                    <li class="w-full md:w-auto"><a href="index.html" class="nav-link nav-link-active">Inicio</a></li>
-                    <li class="w-full md:w-auto"><a href="pages/servicios.html" class="nav-link">Servicios</a></li>
-                    <li class="w-full md:w-auto"><a href="pages/insumos.html" class="nav-link">Insumos/Hospitalarios</a>
-                    </li>
-                    <li class="w-full md:w-auto"><a href="pages/sobre-nosotros.html" class="nav-link">Sobre nosotros</a>
-                    </li>
-                    <li class="w-full md:w-auto"><a href="pages/formacion.html" class="nav-link">Formación</a></li>
-                    <li class="w-full md:w-auto"><a href="pages/contacto.html" class="nav-link">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="header-envuelve">
+        <!-- Logotipo del sitio (mas adelante cambio por un logo) -->
+        <a href="index.html" class="logo-marca">
+          <span class="text-xl">🩺</span>
+          CuidadoEnfermero
+        </a>
+        <!-- Menu de navegacion -->
+        <nav class="w-full md:w-auto">
+          <!-- hidden md:flex ((oculta la lista en celulares)) -->
+          <ul
+            class="flex w-full flex-col items-center justify-center gap-2 text-center text-sm md:flex-row md:gap-4"
+          >
+            <li class="w-full md:w-auto">
+              <a href="index.html" class="nav-link nav-link-active">Inicio</a>
+            </li>
+            <li class="w-full md:w-auto">
+              <a href="pages/servicios.html" class="nav-link">Servicios</a>
+            </li>
+            <li class="w-full md:w-auto">
+              <a href="pages/insumos.html" class="nav-link"
+                >Insumos/Hospitalarios</a
+              >
+            </li>
+            <li class="w-full md:w-auto">
+              <a href="pages/sobre-nosotros.html" class="nav-link"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li class="w-full md:w-auto">
+              <a href="pages/formacion.html" class="nav-link">Formación</a>
+            </li>
+            <li class="w-full md:w-auto">
+              <a href="pages/contacto.html" class="nav-link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- Contenido principal -->
     <main>
-        <!-- Seccion Hero con video de fondo -->
-        <section class="hero-section">
-            <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover -z-10">
-                <source src="assets/video/video-enfermero2.mp4" type="video/mp4">
-                Tu navegador no soporta videos HTML5.
-            </video>
-            <!-- Capa oscura "overlay" (bg-slate-900/70 oscurece el video un 70% para que las letras resalten con claridad)-->
-            <div class="hero-capa-oscura"></div>
-            <!-- Contenido central -->
-            <div class="relative z-10 max-w-4xl mx-auto text-center">
-                <span class="hero-span">
-                    Atención especializada & Insumos Hospitalarios
-                </span>
-                <!-- Titulo principal -->
-                <h1 class="hero-titulo">
-                    Cuidado Enfermero Profesional e Integral
-                </h1>
-                <p class="hero-subtitulo">
-                    Servicios de Alta complejidad y asistencia domiciliaria
-                </p>
-                <!-- Botones de acción -->
-                <div
-                    class="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-sm mx-auto sm:max-w-none ">
-                    <a href="pages/contacto.html" class="btn-primario">Solicitar Atención</a>
-                    <a href="pages/insumos.html" class="btn-secundario">Ver Insumos</a>
-                </div>
+      <!-- Seccion Hero con video de fondo -->
+      <section class="hero-section">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="absolute inset-0 -z-10 h-full w-full object-cover"
+        >
+          <source src="assets/video/video-enfermero2.mp4" type="video/mp4" />
+          Tu navegador no soporta videos HTML5.
+        </video>
+        <!-- Capa oscura "overlay" (bg-slate-900/70 oscurece el video un 70% para que las letras resalten con claridad)-->
+        <div class="hero-capa-oscura"></div>
+        <!-- Contenido central -->
+        <div class="relative z-10 mx-auto max-w-4xl text-center">
+          <span class="hero-span">
+            Atención especializada & Insumos Hospitalarios
+          </span>
+          <!-- Titulo principal -->
+          <h1 class="hero-titulo">Cuidado Enfermero Profesional e Integral</h1>
+          <p class="hero-subtitulo">
+            Servicios de Alta complejidad y asistencia domiciliaria
+          </p>
+          <!-- Botones de acción -->
+          <div
+            class="mx-auto flex max-w-sm flex-col items-center justify-center gap-3 sm:max-w-none sm:flex-row"
+          >
+            <a href="pages/contacto.html" class="btn-primario"
+              >Solicitar Atención</a
+            >
+            <a href="pages/insumos.html" class="btn-secundario">Ver Insumos</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion de servicios destacados -->
+      <section class="bg-white px-6 py-16">
+        <!-- --Encabezado de la seccion -->
+        <div class="mx-auto max-w-6xl space-y-12">
+          <div class="space-y-3 text-center">
+            <span
+              class="text-md font-bold tracking-widest text-slate-800 uppercase"
+            >
+              Soluciones Integrales
+            </span>
+            <h2 class="section-titulo">
+              Atención Profesional e Insumos Hospitalarios
+            </h2>
+            <p class="section-subtitulo">
+              Acompañamiento domiciliario de calidad y provisión directa de
+              material hospitalario descartable.
+            </p>
+          </div>
+          <!-- contenedor para las targetas / responsivo de uan 1 columna en mobil-->
+          <div class="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
+            <!-- Cuidados domiciliarios -->
+            <div class="card-servicios">
+              <div class="mb-4 text-center text-4xl">🩺</div>
+              <h3 class="mb-3 text-xl font-bold text-slate-800">
+                Enfermería Domiciliaria
+              </h3>
+              <p class="pb-8 text-sm leading-relaxed text-slate-600">
+                Asistencia profesional, administración de medicamentos, control
+                de signos vitales y curaciones con seguimiento personalizado.
+              </p>
+              <a href="pages/servicios.html" class="btn-primario">
+                Ver servicios <span>→</span>
+              </a>
             </div>
-
-        </section>
-
-
-        <!-- Seccion de servicios destacados -->
-        <section class="py-16 px-6 bg-white">
-            <!-- --Encabezado de la seccion -->
-            <div class="max-w-6xl mx-auto space-y-12">
-                <div class="text-center space-y-3">
-                    <span class="text-md font-bold tracking-widest text-slate-800 uppercase">
-                        Soluciones Integrales 
-                    </span>
-                    <h2 class="section-titulo">
-                        Atención Profesional e Insumos Hospitalarios
-                    </h2>
-                    <p class="section-subtitulo">
-                        Acompañamiento domiciliario de calidad y provisión directa de material hospitalario descartable.
-                    </p>
-                </div>
-                <!-- contenedor para las targetas / responsivo de uan 1 columna en mobil-->
-                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Cuidados domiciliarios -->
-                    <div class="card-servicios">
-                        <div class="text-4xl mb-4">🩺</div>
-                        <h3 class="text-xl font-bold text-slate-800 mb-3">Enfermería Domiciliaria</h3>
-                        <p class="text-slate-600 leading-relaxed text-sm pb-8">Asistencia profesional, administración de medicamentos, control de signos vitales y curaciones con seguimiento personalizado.</p>
-                        <a href="pages/servicios.html" class="btn-primario">
-                            Ver servicios <span>→</span>
-                        </a>
-                    </div>
-                    <!-- Insumos Hospitalarios -->
-                    <div class="card-servicios">
-                        <div class="text-4xl mb-4">📦</div>
-                        <h3 class="text-xl font-bold text-slate-800 mb-3">Insumos Hospitalarios</h3>
-                        <p class="text-slate-600 leading-relaxed text-sm pb-8">
-                            Venta directa de material descartable, kits de curación, elementos de protección y descatables para pacientes e instituciones.
-                        </p>
-                        <a href="pages/insumos.html" class="btn-primario">
-                            Ver catálogo <span>→</span>
-                        </a>
-                    </div>
-                    <!-- Capacitación y Asesoramiento -->
-                    <div class="card-servicios">
-                        <div class="text-4xl mb-4">🎓</div>
-                        <h3 class="text-xl font-bold text-slate-800 mb-3">Formación & Asesoría</h3>
-                        <p class="text-slate-600 leading-relaxed text-sm pb-8">Capacitación para cuidadores, asesoramiento técnico en manejo de insumos e instrucción para la atención en el hogar.</p>
-                        
-                            <a href="pages/formacions.html" class="btn-primario">
-                            Saber más <span>→</span>
-                        </a>
-                    </div>
-                </div>
+            <!-- Insumos Hospitalarios -->
+            <div class="card-servicios">
+              <div class="mb-4 text-center text-4xl">📦</div>
+              <h3 class="mb-3 text-xl font-bold text-slate-800">
+                Insumos Hospitalarios
+              </h3>
+              <p class="pb-8 text-sm leading-relaxed text-slate-600">
+                Venta directa de material descartable, kits de curación,
+                elementos de protección y descatables para pacientes e
+                instituciones.
+              </p>
+              <a href="pages/insumos.html" class="btn-primario">
+                Ver catálogo <span>→</span>
+              </a>
             </div>
-        </section>
-        <!-- Seccion de llamado de Atención -->
-        <section class="cta-section">
-            <div class="max-w4-xl mx-auto text-center space-y-6">
-                <h2 class="text-2xl md:text-3xl font-bold text-white">
-                    ¿Necesitas atención clínica o Insumos Hospitalarios?
-                </h2>
-                <p class="text-emerald-100 max-w-2xl mx-auto text-sm md:text-base">
-                    Coordinamos planes de cuidado a medida y proveemos insumos hospitalarios descartables con entrega
-                    directa y atención profesional.
-                </p>
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
-                    <a href="pages/insumos.html" class="btn-cta-primario">
-                        Ver Catálogo de Insumos
-                    </a>
-                    <a href="https://wa.me/#" target="_blank" class="btn-cta-secundario">
-                        Consultar por WhatsApp
-                    </a>
-                </div>
+            <!-- Capacitación y Asesoramiento -->
+            <div class="card-servicios">
+              <div class="mb-4 text-center text-4xl">🎓</div>
+              <h3 class="mb-3 text-xl font-bold text-slate-800">
+                Formación & Asesoría
+              </h3>
+              <p class="pb-8 text-sm leading-relaxed text-slate-600">
+                Capacitación para cuidadores, asesoramiento técnico en manejo de
+                insumos e instrucción para la atención en el hogar.
+              </p>
 
+              <a href="pages/formacions.html" class="btn-primario">
+                Saber más <span>→</span>
+              </a>
             </div>
-        </section>
-
+          </div>
+        </div>
+      </section>
+      <!-- Seccion de llamado de Atención -->
+      <section class="cta-section">
+        <div class="max-w4-xl mx-auto space-y-6 text-center">
+          <h2 class="text-2xl font-bold text-white md:text-3xl">
+            ¿Necesitas atención clínica o Insumos Hospitalarios?
+          </h2>
+          <p class="mx-auto max-w-2xl text-sm text-emerald-100 md:text-base">
+            Coordinamos planes de cuidado a medida y proveemos insumos
+            hospitalarios descartables con entrega directa y atención
+            profesional.
+          </p>
+          <div
+            class="flex flex-col items-center justify-center gap-4 pt-2 sm:flex-row"
+          >
+            <a href="pages/insumos.html" class="btn-cta-primario">
+              Ver Catálogo de Insumos
+            </a>
+            <a
+              href="https://wa.me/#"
+              target="_blank"
+              class="btn-cta-secundario"
+            >
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer detallado -->
     <footer class="footer-contenedor">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-20">
-            <!-- columna 1 Marca -->
-            <div class="space-y-3">
-                <a href="index.html" class="flex items-center gap-2 text-lg font-bold text-white">
-                    <span class="text-emerald-500">🩺</span> CuidadoEnfermero
-                </a>
-                <p class="text-slate-400 text-xs leading-relaxed">
-                    Atención de Enfermería Profesional, cuidado de alta complejidad y Insumos Hospitalarios a domicilio.
-                </p>
-            </div>
-            <!-- Columna 2 Navegación Rápida -->
-            <div>
-                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Navegación</h4>
-                <ul class="space-y-2 text-xs">
-                    <li><a href="index.html" class="footer-link">Inicio</a></li>
-                    <li><a href="pages/servicios.html" class="footer-link">Servicios</a></li>
-                    <li><a href="pages/insumos.html" class="footer-link">Insumos/Hospitalarios</a></li>
-                    <li><a href="pages/sobre-nosotros.html" class="footer-link">Sobre nosotros</a></li>
-                    <li><a href="pages/formacion.html" class="footer-link">Formación & Títulos</a></li>
-                </ul>
-            </div>
-            <!-- Columna 3 Especialidades -->
-            <div>
-                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Especialidades</h4>
-                <ul class="space-y-2 text-xs text-slate-400">
-                    <li>Cuidados Intensivos / UTI</li>
-                    <li>Internación Domiciliaria</li>
-                    <li>Curaciones Complejas</li>
-                    <li>Monitoreo Multiparamétrico</li>
-                </ul>
-            </div>
-            <!-- Columna 4 Contacto Rápido -->
-            <div>
-                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Contacto</h4>
-                <ul class="space-y-2 text-xs">
-                    <li class="flex items-center gap-2">
-                        <span>📍</span> Buenos Aires, Argentina
-                    </li>
-                    <li class="flex items-center gap2">
-                        <span>💬</span> <a href="https://wa.me/#" target="_blank" class="footer-link">Atención vía
-                            WhatsApp</a>
-                    </li>
-                    <li>
-                        <a href="pages/contacto.html"
-                            class="inline-block mt-2 px-3 py-1.5 bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 rounded-lg text-xs font-medium hover:bg-emerald-600/30 transition">
-                            Enviar Consulta →
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div
+        class="mx-auto mb-20 grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-4"
+      >
+        <!-- columna 1 Marca -->
+        <div class="space-y-3">
+          <a
+            href="index.html"
+            class="flex items-center gap-2 text-lg font-bold text-white"
+          >
+            <span class="text-emerald-500">🩺</span> CuidadoEnfermero
+          </a>
+          <p class="text-xs leading-relaxed text-slate-400">
+            Atención de Enfermería Profesional, cuidado de alta complejidad y
+            Insumos Hospitalarios a domicilio.
+          </p>
         </div>
-        <!-- Desarrollado por Flo.luigi85@gmail.com -->
-        <div
-            class="max-w-6xl mx-auto pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-            <p>© 2026 CuidadoEnfermero. Todos los derechos reservados.</p>
-            <p>Diseñado HTML & Tailwind CSS</p>
+        <!-- Columna 2 Navegación Rápida -->
+        <div>
+          <h4
+            class="mb-3 text-xs font-semibold tracking-wider text-white uppercase"
+          >
+            Navegación
+          </h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="footer-link">Inicio</a></li>
+            <li>
+              <a href="pages/servicios.html" class="footer-link">Servicios</a>
+            </li>
+            <li>
+              <a href="pages/insumos.html" class="footer-link"
+                >Insumos/Hospitalarios</a
+              >
+            </li>
+            <li>
+              <a href="pages/sobre-nosotros.html" class="footer-link"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li>
+              <a href="pages/formacion.html" class="footer-link"
+                >Formación & Títulos</a
+              >
+            </li>
+          </ul>
         </div>
+        <!-- Columna 3 Especialidades -->
+        <div>
+          <h4
+            class="mb-3 text-xs font-semibold tracking-wider text-white uppercase"
+          >
+            Especialidades
+          </h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li>Cuidados Intensivos / UTI</li>
+            <li>Internación Domiciliaria</li>
+            <li>Curaciones Complejas</li>
+            <li>Monitoreo Multiparamétrico</li>
+          </ul>
+        </div>
+        <!-- Columna 4 Contacto Rápido -->
+        <div>
+          <h4
+            class="mb-3 text-xs font-semibold tracking-wider text-white uppercase"
+          >
+            Contacto
+          </h4>
+          <ul class="space-y-2 text-xs">
+            <li class="flex items-center gap-2">
+              <span>📍</span> Buenos Aires, Argentina
+            </li>
+            <li class="gap2 flex items-center">
+              <span>💬</span>
+              <a href="https://wa.me/#" target="_blank" class="footer-link"
+                >Atención vía WhatsApp</a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/contacto.html"
+                class="mt-2 inline-block rounded-lg border border-emerald-500/30 bg-emerald-600/20 px-3 py-1.5 text-xs font-medium text-emerald-400 transition hover:bg-emerald-600/30"
+              >
+                Enviar Consulta →
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Desarrollado por Flo.luigi85@gmail.com -->
+      <div
+        class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 border-t border-slate-800 pt-6 text-xs text-slate-500 sm:flex-row"
+      >
+        <p>© 2026 CuidadoEnfermero. Todos los derechos reservados.</p>
+        <p>Diseñado HTML & Tailwind CSS</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
