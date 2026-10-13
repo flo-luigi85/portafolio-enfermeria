@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
   <body
-    class="flex min-h-screen flex-col overflow-hidden bg-slate-50 text-slate-700 antialiased"
+    class="flex min-h-screen flex-col overflow-x-hidden bg-slate-50 text-slate-700 antialiased"
   >
     <header class="header-contenedor">
       <div class="header-envuelve">
@@ -54,11 +54,11 @@
 
     <!-- Contenido principal -->
 
-    <main class="grow">
+    <main class="py-12">
       <!-- Empiezo de página -->
-      <div>
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <!-- cabecera principal -->
-        <div class="mx-auto mb-16 max-w-3xl pt-6 text-center">
+        <div class="mx-auto mb-16 max-w-3xl text-center">
           <span
             class="mb-3 inline-block rounded-full bg-emerald-100 px-3.5 py-1.5 text-sm font-semibold tracking-wider text-emerald-700 uppercase"
           >
@@ -79,8 +79,17 @@
         <section
           class="mb-20 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10"
         >
-          <div>
-            <span> RQ </span>
+          <div
+            class="mb-20 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10"
+          >
+            <div>
+              <img
+                src="../assets/icons/lic-enfemeria.jpg"
+                alt="Logo-lic.enfermería"
+                class="h-12 w-20"
+              />
+            </div>
+
             <div>
               <div class="flex flex-wrap items-center gap-3">
                 <h2 class="text-2xl font-bold text-slate-900">
@@ -99,17 +108,199 @@
             </div>
           </div>
           <div>
-            <!-- Académicos - Grado postgrados -->
+            <!-- Académicos - Grado - postgrados -->
             <div>
-              <h3><span>🎓</span>Educacion Superior</h3>
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+              <h3>
+                <span
+                  ><img
+                    src="../assets/icons/academico.jpg"
+                    alt="Logo Académico"
+                    class="h-8 w-8" /></span
+                >Educacion Superior
+              </h3>
+              <ul class="space-y-4 text-sm text-slate-600">
+                <li class="border-l-2 border-emerald-500 pl-3">
+                  <strong class="block text-slate-900"
+                    >Especialización en Cuidados Críticos en Adulto</strong
+                  >
+                  <span>Universidad Favaloro (2026)</span>
+                </li>
+                <li class="border-l-2 border-emerald-500 pl-3">
+                  <strong class="block text-slate-900"
+                    >Ciclo Pedagógico en Enfermería</strong
+                  >
+                  <span>Universidad del Salvador - USAL (2025)</span>
+                </li>
+                <li class="border-l-2 border-emerald-500 pl-3">
+                  <strong class="block text-slate-900"
+                    >Licenciatura en Enfermería</strong
+                  >
+                  <span>Universidad del Salvador - USAL (2023)</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Breve descripción sobre experiencia y Docencia -->
+            <div>
+              <h3
+                class="mb-4 flex items-center gap-2 text-lg font-bold text-slate-900"
+              >
+                <span
+                  ><img
+                    src="../assets/icons/docencia.jpg"
+                    alt="Imagen-docencia"
+                    class="h-6 w-6"
+                /></span>
+                Experiencia y Docencia
+              </h3>
+              <ul class="space-y-4 text-sm text-slate-600">
+                <li class="border-l-2 border-slate-300 pl-3">
+                  <strong class="block text-slate-900"
+                    >Docente en Enfermería</strong
+                  >
+                  <span
+                    >Instituto Agustina Bermejo (Prácticas pedagógicas, clases y
+                    evaluación)</span
+                  >
+                </li>
+                <li class="border-l-2 border-slate-300 pl-3">
+                  <strong class="block text-slate-900">Enfermera UCI</strong>
+                  <span
+                    >Sanatorio del Oeste (Ago 2025 - Presente) | Clínica Modelo
+                    de los Cedros (2019 - 2025)</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Certificaciones -->
+            <div>
+              <h3
+                class="mb-4 flex items-center gap-2 text-lg font-bold text-slate-900"
+              >
+                <span
+                  ><img
+                    src="../assets/icons/capacitaciones.jpg"
+                    alt="Imagen-capacitacion"
+                    class="h-6 w-6"
+                /></span>
+                Capacitaciones Destacadas
+              </h3>
+              <ul class="space-y-2 text-xs text-slate-600">
+                <li
+                  class="rounded-lg border border-slate-100 bg-slate-50 p-2.5"
+                >
+                  <strong>Ventilación Mecánica</strong> (60hs, 2026)
+                </li>
+                <li
+                  class="rounded-lg border border-slate-100 bg-slate-50 p-2.5"
+                >
+                  <strong>Curso de IA en la Salud</strong> (66hs, 2026)
+                </li>
+                <li
+                  class="rounded-lg border border-slate-100 bg-slate-50 p-2.5"
+                >
+                  <strong>Liderazgo, Oratoria y Comunicación</strong> (40hs,
+                  2026)
+                </li>
+                <li
+                  class="rounded-lg border border-slate-100 bg-slate-50 p-2.5"
+                >
+                  <strong>Electrocardiograma y Emergentología</strong>
+                </li>
               </ul>
             </div>
           </div>
         </section>
+
+        <!-- Breve descripción sobre Flores L -->
+
+        <section
+          class="mb-16 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10"
+        >
+          <div
+            class="mb-8 flex flex-col items-start gap-6 border-b border-slate-100 pb-8 md:flex-row md:items-center"
+          >
+            <div>
+              <img
+                src="../assets/icons/logo-flores2.jpg"
+                alt="Logo-l-flores"
+                class="h1-2 w-12"
+              />
+            </div>
+            <div>
+              <div class="flex flex-wrap items-center gap-3">
+                <h2 class="text-2xl font-bold text-slate-900">
+                  Luis Fernando Flores
+                </h2>
+                <span
+                  class="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-800"
+                >
+                  Título en Trámite (UAI)
+                </span>
+              </div>
+              <p class="mt-1 text-sm text-slate-600">
+                Enfermero Universitario - Formación orientada a la excelencia en
+                el cuidado asistencial.
+              </p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+            <div>
+              <h3 class="mb-3 text-lg font-bold text-slate-900">
+                Formación Académica
+              </h3>
+              <p class="mb-4 text-sm leading-relaxed text-slate-600">
+                Egresado de la
+                <strong class="text-slate-800"
+                  >Universidad Abierta Interamericana (UAI)</strong
+                >, habiendo completado y aprobado la totalidad de las materias
+                correspondientes a la carrera de
+                <strong>Enfermero Universitario</strong> en la Facultad de
+                Medicina y Ciencias de la Salud.
+              </p>
+              <div
+                class="inline-flex items-center gap-2 rounded-xl border border-emerald-100 bg-emerald-50 px-3.5 py-2 text-xs font-medium text-emerald-800"
+              >
+                <span>✓</span> Analítico y Diploma en trámite oficial ante la
+                DNGU (Ministerio de Educación).
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center rounded-2xl border border-slate-100 bg-slate-50 p-6"
+            >
+              <span
+                class="mb-1 text-xs font-semibold tracking-wider text-slate-400 uppercase"
+                >Estado de Acreditación</span
+              >
+              <p class="text-sm font-medium text-slate-700">
+                Constancia oficial emitida por el Rectorado de la UAI con aval
+                legal para el ejercicio y presentación profesional.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Validacion -->
+        <div
+          class="flex flex-col items-center justify-between gap-6 rounded-3xl bg-slate-900 p-8 text-center text-white shadow-xl sm:flex-row sm:p-12"
+        >
+          <div class="text-left">
+            <h3 class="text-xl font-bold sm:text-2xl">
+              ¿Requerís validación de antecedentes o matrículas?
+            </h3>
+            <p class="mt-1 text-sm text-slate-300">
+              Ponemos a disposición constancias oficiales, analíticos y
+              referencias institucionales para auditorías o contrataciones.
+            </p>
+          </div>
+          <a
+            href="contacto.html"
+            class="btn-page !w-auto rounded-xl bg-emerald-600 px-6 py-3 font-medium whitespace-nowrap text-white shadow-md transition-all hover:bg-emerald-500"
+          >
+            Contactar Profesionales →
+          </a>
+        </div>
       </div>
     </main>
 
