@@ -261,11 +261,11 @@
             <div>
               <div
                 class="h-48 w-full overflow-hidden rounded-xl mb-4 bg-slate-50 flex items-center justify-center cursor-zoom-in relative">
-                <img src="../img/alcohol.jpg" alt="Alcohol en Gel Sanitizante"
+                <img src="../assets/img/alcohol-en-gel.webp" alt="Alcohol en Gel Sanitizante"
                   class="h-full w-full object-cover img-ampliable transition group-hover:scale-105">
               </div>
-              <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Alcohol en Gel Sanitizante</h3>
-              <p class="text-slate-500 text-xs text-center mb-4 min-h-[32px]">Botella de 1 Litro con dosificador.</p>
+              <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Alcohol en Gel 70% Sanitizante</h3>
+              <p class="text-slate-500 text-xs text-center mb-4 min-h-[32px]">Manos Sanitagel Jenssen 200ml.</p>
             </div>
             <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
               <input type="number" min="1" value="1"
@@ -281,7 +281,7 @@
             <div>
               <div
                 class="h-48 w-full overflow-hidden rounded-xl mb-4 bg-slate-50 flex items-center justify-center cursor-zoom-in relative">
-                <img src="../img/barbijos.jpg" alt="Barbijos Tricapa"
+                <img src="../assets/img/barbijo-tricapa-caja.webp" alt="Barbijos Tricapa"
                   class="h-full w-full object-cover img-ampliable transition group-hover:scale-105">
               </div>
               <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Barbijos Tricapa</h3>
@@ -301,11 +301,11 @@
             <div>
               <div
                 class="h-48 w-full overflow-hidden rounded-xl mb-4 bg-slate-50 flex items-center justify-center cursor-zoom-in relative">
-                <img src="../img/vendas.jpg" alt="Vendas Elásticas"
+                <img src="../assets/img/venda-flebologica.webp" alt="Vendas Elásticas"
                   class="h-full w-full object-cover img-ampliable transition group-hover:scale-105">
               </div>
-              <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Vendas Elásticas</h3>
-              <p class="text-slate-500 text-xs text-center mb-4 min-h-[32px]">10cm x 3m con clips de sujeción.</p>
+              <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Venda Flebologica Elástica</h3>
+              <p class="text-slate-500 text-xs text-center mb-4 min-h-[32px]">10cm x 3m Varices Pierna.</p>
             </div>
             <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
               <input type="number" min="1" value="1"
@@ -321,7 +321,7 @@
             <div>
               <div
                 class="h-48 w-full overflow-hidden rounded-xl mb-4 bg-slate-50 flex items-center justify-center cursor-zoom-in relative">
-                <img src="../img/termometro.jpg" alt="Termómetro Infrarrojo Digital"
+                <img src="../assets/img/termometro3.webp" alt="Termómetro Infrarrojo Digital"
                   class="h-full w-full object-cover img-ampliable transition group-hover:scale-105">
               </div>
               <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Termómetro Infrarrojo</h3>
@@ -343,11 +343,11 @@
             <div>
               <div
                 class="h-48 w-full overflow-hidden rounded-xl mb-4 bg-slate-50 flex items-center justify-center cursor-zoom-in relative">
-                <img src="../img/oximetro.jpg" alt="Oxímetro de Pulso"
+                <img src="../assets/img/kit-saturumetro1.webp" alt="Oxímetro de Pulso"
                   class="h-full w-full object-cover img-ampliable transition group-hover:scale-105">
               </div>
-              <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Oxímetro de Pulso</h3>
-              <p class="text-slate-500 text-xs text-center mb-4 min-h-[32px]">Saturómetro digital para dedo con estuche.
+              <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Kit de OxImetro</h3>
+              <p class="text-slate-500 text-xs text-center mb-4 min-h-[32px]">Saturómetro digital y Saturómetro.
               </p>
             </div>
             <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
@@ -358,6 +358,24 @@
           </div>
 
         </div>
+      </section>
+
+      <!-- SECCIÓN DEMO: FAKE STORE API -->
+      <section class="max-w-7xl mx-auto px-4 py-12 border-t border-slate-200">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span
+            class="inline-block rounded-full border border-emerald-500/30 bg-emerald-50 px-3 py-1 text-xs font-semibold tracking-wider text-emerald-700 uppercase mb-3">
+            Prueba Fake Store API
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-2">Catálogo Dinámico (API Externa)</h2>
+          <p class="text-slate-600">Vista de ejemplo consumiendo <code>fakestoreapi.com</code> con JavaScript.</p>
+        </div>
+
+        <p id="estado-api" class="text-center text-sm text-slate-500 mb-6">
+          Cargando productos...
+        </p>
+
+        <div id="catalogo-api" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
       </section>
 
       <!-- Modal Lightbox (Para agrandar imagen) -->
