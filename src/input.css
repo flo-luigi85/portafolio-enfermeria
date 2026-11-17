@@ -8,29 +8,36 @@
 
 @layer components {
   /* 1. Header y Navegación */
+  
   .header-contenedor {
-    @apply sticky top-0 z-50 border-b border-emerald-100 bg-white/90 shadow-sm backdrop-blur-md;
+    @apply sticky top-0 z-50 w-full border-b border-emerald-100 bg-white/90 shadow-sm backdrop-blur-md;
   }
 
+.header-envuelve {
+  @apply mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-4 md:flex-row;
+}
+  
+
   .header-envuelve {
-    @apply mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-4 md:flex-row;
+    @apply mx-auto flex max-w-6xl flex-row items-center justify-between px-6 py-4;
   }
 
   .logo-marca {
     @apply flex items-center gap-2 text-xl font-bold text-emerald-700;
   }
 
+  
   .nav-link {
-    @apply block w-full rounded-xl bg-emerald-500/30 px-3 py-2 font-semibold text-slate-600 transition hover:bg-emerald-200/30 md:w-auto md:bg-transparent;
+    @apply inline-block rounded-xl px-4 py-2 font-medium text-slate-700 transition hover:bg-emerald-100 md:block md:w-auto md:bg-transparent;
   }
-
+  
   .nav-link-active {
     @apply text-emerald-400;
   }
 
   /* 2. Sección Hero */
   .hero-section {
-    @apply relative flex min-h-[550px] items-center justify-center overflow-hidden px-6 py-20;
+    @apply relative flex min-h-137.5 items-center justify-center overflow-hidden px-6 py-20;
   }
 
   .hero-capa-oscura {
@@ -140,5 +147,19 @@
 
   .footer-link {
     @apply transition hover:text-emerald-400;
+  }
+
+  /*==============================================
+  /*Para el texto disponible y btn-agregar
+  /*==============================================
+
+  /* Estilo reusable para el badge de Disponibilidad */
+  .badge-disponible {
+    @apply absolute top-3 left-3 bg-indigo-50 text-indigo-700 border border-indigo-200 text-[11px] font-bold px-2.5 py-1 rounded-full z-10 shadow-sm transition-colors duration-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 cursor-default;
+  }
+
+  /* Estilo reusable para el Botón Agregar */
+  .btn-agregar {
+    @apply flex-1 bg-indigo-50 text-indigo-700 border border-indigo-200 text-xs font-bold py-2.5 px-3 rounded-xl transition-all duration-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 flex items-center justify-center gap-1 cursor-pointer;
   }
 }

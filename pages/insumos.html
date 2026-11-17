@@ -10,17 +10,23 @@
 </head>
 
 <body class="flex min-h-screen flex-col overflow-x-hidden bg-slate-50 text-slate-700 antialiased">
-  <!-- Encabezado y Navegación -->
-  <header class="header-contenedor">
+  <!--Encabezado y Navegación-->
+  <header class="header-contenedor relative">
     <div class="header-envuelve">
-      <!-- Logotipo del sitio -->
+      <!-- Logotipo del sitio (mas adelante cambio por un logo) -->
       <a href="../index.html" class="logo-marca">
         <span class="text-xl">🩺</span>
         CuidadoEnfermero
       </a>
+      <!-- Botón de Menú Hamburguesa (Solo visible en celulares) -->
+      <button id="menu-btn" class="md:hidden text-2xl p-2 text-slate-700 focus:outline-none">
+        ☰
+      </button>
       <!-- Menu de navegacion -->
       <nav class="w-full md:w-auto">
-        <ul class="flex w-full flex-col items-center justify-center gap-2 text-center text-sm md:flex-row md:gap-4">
+        <!-- hidden md:flex ((oculta la lista en celulares)) -->
+        <ul id="menu"
+          class="hidden md:flex flex-col md:flex-row items-center justify-center gap-3 py-6 px-6 md:py-0 absolute md:static top-full left-0 w-full bg-white md:bg-transparent shadow-xl md:shadow-none border-b border-emerald-100 md:border-none text-center">
           <li class="w-full md:w-auto">
             <a href="../index.html" class="nav-link">Inicio</a>
           </li>
@@ -172,6 +178,214 @@
 
       </div>
 
+      <!-- SECCIÓN CATÁLOGO DE INSUMOS (8 ARTÍCULOS) -->
+      <section class="max-w-7xl mx-auto px-4 py-12">
+
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span
+            class="inline-block rounded-full border border-indigo-500/30 bg-indigo-50 px-3 py-1 text-xs font-semibold tracking-wider text-indigo-700 uppercase mb-3">Catálogo
+            de Insumos</span>
+          <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-2">Productos y Material Hospitalario</h1>
+          <p class="text-slate-600">Elegí las cantidades de cada insumo y armá tu pedido directamente por WhatsApp.</p>
+        </div>
+
+        <!-- Grilla de 8 productos -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+          <!-- 1. Jeringas Descartables -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm hover:shadow-md transition flex flex-col justify-between relative group">
+            <span class="badge-disponible">Disponible</span>
+            <div>
+              <div
+                class="h-48 w-full overflow-hidden rounded-xl mb-4 bg-slate-50 flex items-center justify-center cursor-zoom-in relative">
+                <!-- Cambiamos scale-105 por scale-110 (o scale-115 si querés que crezca todavía un poco más) -->
+                <img src="../assets/img/jeringas-descartables.webp" alt="Jeringas Descartables"
+                  class="h-full w-full object-cover img-ampliable transition duration-300 group-hover:scale-200">
+              </div>
+              <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Jeringas Descartables</h3>
+              <p class="text-slate-500 text-xs text-center mb-4 min-h-[32px]">Varias medidas (10ml, 20ml). Estériles.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
+              <input type="number" min="1" value="1"
+                class="cantidad-input w-12 text-center border border-slate-300 rounded-xl py-2 text-sm font-bold text-slate-700 focus:outline-indigo-500">
+              <button class="btn-agregar agregar-carrito" data-nombre="Jeringas Descartables">🛒 Agregar</button>
+            </div>
+          </div>
+
+          <!-- 2. Guantes de Látex -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm hover:shadow-md transition flex flex-col justify-between relative group">
+            <span class="badge-disponible">Disponible</span>
+            <div>
+              <div
+                class="h-48 w-full overflow-hidden rounded-xl mb-4 bg-slate-50 flex items-center justify-center cursor-zoom-in relative">
+                <img src="../assets/img/guantes-de-examinacion.webp" alt="Guantes de Látex"
+                  class="h-full w-full object-cover img-ampliable transition group-hover:scale-200">
+              </div>
+              <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Guantes de Látex</h3>
+              <p class="text-slate-500 text-xs text-center mb-4 min-h-[32px]">Caja x 100 unidades. Talles S, M y L.</p>
+            </div>
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
+              <input type="number" min="1" value="1"
+                class="cantidad-input w-12 text-center border border-slate-300 rounded-xl py-2 text-sm font-bold text-slate-700 focus:outline-indigo-500">
+              <button class="btn-agregar agregar-carrito" data-nombre="Guantes de Látex (Caja x100)">🛒 Agregar</button>
+            </div>
+          </div>
+
+          <!-- 3. Gasas Estériles -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm hover:shadow-md transition flex flex-col justify-between relative group">
+            <span class="badge-disponible">Disponible</span>
+            <div>
+              <div
+                class="h-48 w-full overflow-hidden rounded-xl mb-4 bg-slate-50 flex items-center justify-center cursor-zoom-in relative">
+                <img src="../assets/img/gasas.webp" alt="Gasas Estériles"
+                  class="h-full w-full object-cover img-ampliable transition group-hover:scale-105">
+              </div>
+              <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Gasas Estériles</h3>
+              <p class="text-slate-500 text-xs text-center mb-4 min-h-[32px]">Sobres x 10 unidades. Alta absorción.</p>
+            </div>
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
+              <input type="number" min="1" value="1"
+                class="cantidad-input w-12 text-center border border-slate-300 rounded-xl py-2 text-sm font-bold text-slate-700 focus:outline-indigo-500">
+              <button class="btn-agregar agregar-carrito" data-nombre="Gasas Estériles (Sobres x10)">🛒 Agregar</button>
+            </div>
+          </div>
+
+          <!-- 4. Alcohol en Gel -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm hover:shadow-md transition flex flex-col justify-between relative group">
+            <span class="badge-disponible">Disponible</span>
+            <div>
+              <div
+                class="h-48 w-full overflow-hidden rounded-xl mb-4 bg-slate-50 flex items-center justify-center cursor-zoom-in relative">
+                <img src="../img/alcohol.jpg" alt="Alcohol en Gel Sanitizante"
+                  class="h-full w-full object-cover img-ampliable transition group-hover:scale-105">
+              </div>
+              <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Alcohol en Gel Sanitizante</h3>
+              <p class="text-slate-500 text-xs text-center mb-4 min-h-[32px]">Botella de 1 Litro con dosificador.</p>
+            </div>
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
+              <input type="number" min="1" value="1"
+                class="cantidad-input w-12 text-center border border-slate-300 rounded-xl py-2 text-sm font-bold text-slate-700 focus:outline-indigo-500">
+              <button class="btn-agregar agregar-carrito" data-nombre="Alcohol en Gel 1L">🛒 Agregar</button>
+            </div>
+          </div>
+
+          <!-- 5. Barbijos Tricapa -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm hover:shadow-md transition flex flex-col justify-between relative group">
+            <span class="badge-disponible">Disponible</span>
+            <div>
+              <div
+                class="h-48 w-full overflow-hidden rounded-xl mb-4 bg-slate-50 flex items-center justify-center cursor-zoom-in relative">
+                <img src="../img/barbijos.jpg" alt="Barbijos Tricapa"
+                  class="h-full w-full object-cover img-ampliable transition group-hover:scale-105">
+              </div>
+              <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Barbijos Tricapa</h3>
+              <p class="text-slate-500 text-xs text-center mb-4 min-h-[32px]">Caja x 50 unidades con ajuste nasal.</p>
+            </div>
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
+              <input type="number" min="1" value="1"
+                class="cantidad-input w-12 text-center border border-slate-300 rounded-xl py-2 text-sm font-bold text-slate-700 focus:outline-indigo-500">
+              <button class="btn-agregar agregar-carrito" data-nombre="Barbijos Tricapa (Caja x50)">🛒 Agregar</button>
+            </div>
+          </div>
+
+          <!-- 6. Vendas Elásticas -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm hover:shadow-md transition flex flex-col justify-between relative group">
+            <span class="badge-disponible">Disponible</span>
+            <div>
+              <div
+                class="h-48 w-full overflow-hidden rounded-xl mb-4 bg-slate-50 flex items-center justify-center cursor-zoom-in relative">
+                <img src="../img/vendas.jpg" alt="Vendas Elásticas"
+                  class="h-full w-full object-cover img-ampliable transition group-hover:scale-105">
+              </div>
+              <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Vendas Elásticas</h3>
+              <p class="text-slate-500 text-xs text-center mb-4 min-h-[32px]">10cm x 3m con clips de sujeción.</p>
+            </div>
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
+              <input type="number" min="1" value="1"
+                class="cantidad-input w-12 text-center border border-slate-300 rounded-xl py-2 text-sm font-bold text-slate-700 focus:outline-indigo-500">
+              <button class="btn-agregar agregar-carrito" data-nombre="Vendas Elásticas (10cm x 3m)">🛒 Agregar</button>
+            </div>
+          </div>
+
+          <!-- 7. Termómetro Infrarrojo Digital -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm hover:shadow-md transition flex flex-col justify-between relative group">
+            <span class="badge-disponible">Disponible</span>
+            <div>
+              <div
+                class="h-48 w-full overflow-hidden rounded-xl mb-4 bg-slate-50 flex items-center justify-center cursor-zoom-in relative">
+                <img src="../img/termometro.jpg" alt="Termómetro Infrarrojo Digital"
+                  class="h-full w-full object-cover img-ampliable transition group-hover:scale-105">
+              </div>
+              <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Termómetro Infrarrojo</h3>
+              <p class="text-slate-500 text-xs text-center mb-4 min-h-[32px]">Medición sin contacto. Pantalla LCD
+                digital.</p>
+            </div>
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
+              <input type="number" min="1" value="1"
+                class="cantidad-input w-12 text-center border border-slate-300 rounded-xl py-2 text-sm font-bold text-slate-700 focus:outline-indigo-500">
+              <button class="btn-agregar agregar-carrito" data-nombre="Termómetro Infrarrojo Digital">🛒
+                Agregar</button>
+            </div>
+          </div>
+
+          <!-- 8. Oxímetro de Pulso -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm hover:shadow-md transition flex flex-col justify-between relative group">
+            <span class="badge-disponible">Disponible</span>
+            <div>
+              <div
+                class="h-48 w-full overflow-hidden rounded-xl mb-4 bg-slate-50 flex items-center justify-center cursor-zoom-in relative">
+                <img src="../img/oximetro.jpg" alt="Oxímetro de Pulso"
+                  class="h-full w-full object-cover img-ampliable transition group-hover:scale-105">
+              </div>
+              <h3 class="text-sm font-bold text-slate-800 text-center mb-1">Oxímetro de Pulso</h3>
+              <p class="text-slate-500 text-xs text-center mb-4 min-h-[32px]">Saturómetro digital para dedo con estuche.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
+              <input type="number" min="1" value="1"
+                class="cantidad-input w-12 text-center border border-slate-300 rounded-xl py-2 text-sm font-bold text-slate-700 focus:outline-indigo-500">
+              <button class="btn-agregar agregar-carrito" data-nombre="Oxímetro de Pulso Digital">🛒 Agregar</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Modal Lightbox (Para agrandar imagen) -->
+      <div id="modal-imagen"
+        class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
+        <div class="relative max-w-3xl w-full">
+          <button id="cerrar-modal"
+            class="absolute -top-10 right-0 text-white text-3xl font-bold cursor-pointer hover:text-emerald-400">&times;</button>
+          <img id="imagen-modal-src" src="" alt="Vista ampliada"
+            class="w-full max-h-[80vh] object-contain rounded-2xl shadow-2xl">
+        </div>
+      </div>
+
+      <!-- Barra flotante del Carrito -->
+      <div id="carrito-flotante"
+        class="fixed bottom-4 right-4 bg-slate-900 text-white p-4 rounded-2xl shadow-2xl z-40 flex items-center gap-4 hidden border border-slate-800">
+        <div>
+          <p class="text-xs text-slate-400">Pedido actual:</p>
+          <span id="contador-carrito" class="font-bold text-emerald-400">0 producto(s)</span>
+        </div>
+        <button id="btn-enviar-whatsapp"
+          class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-4 py-2 rounded-xl text-sm transition cursor-pointer">
+          Enviar pedido por WhatsApp 📱
+        </button>
+      </div>
+
+
+
       <!-- Banner CTA / Pedidos por WhatsApp -->
       <div
         class="flex flex-col items-center justify-between gap-6 rounded-3xl bg-slate-900 p-8 text-center text-white shadow-xl sm:flex-row sm:p-12">
@@ -259,6 +473,7 @@
       <p>Diseñado HTML & Tailwind CSS</p>
     </div>
   </footer>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

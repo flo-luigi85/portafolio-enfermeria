@@ -11,17 +11,22 @@
 
 <body class="flex min-h-screen flex-col overflow-x-hidden bg-slate-50 text-slate-700 antialiased">
   <!--Encabezado y Navegación-->
-  <header class="header-contenedor">
+  <header class="header-contenedor relative">
     <div class="header-envuelve">
       <!-- Logotipo del sitio (mas adelante cambio por un logo) -->
       <a href="../index.html" class="logo-marca">
         <span class="text-xl">🩺</span>
         CuidadoEnfermero
       </a>
+      <!-- Botón de Menú Hamburguesa (Solo visible en celulares) -->
+      <button id="menu-btn" class="md:hidden text-2xl p-2 text-slate-700 focus:outline-none">
+        ☰
+      </button>
       <!-- Menu de navegacion -->
       <nav class="w-full md:w-auto">
         <!-- hidden md:flex ((oculta la lista en celulares)) -->
-        <ul class="flex w-full flex-col items-center justify-center gap-2 text-center text-sm md:flex-row md:gap-4">
+        <ul id="menu"
+          class="hidden md:flex flex-col md:flex-row items-center justify-center gap-3 py-6 px-6 md:py-0 absolute md:static top-full left-0 w-full bg-white md:bg-transparent shadow-xl md:shadow-none border-b border-emerald-100 md:border-none text-center">
           <li class="w-full md:w-auto">
             <a href="../index.html" class="nav-link">Inicio</a>
           </li>
@@ -44,7 +49,6 @@
       </nav>
     </div>
   </header>
-
   <!-- Contendo preincipal -->
   <main class="grow">
     <!-- Cabecera de pagina -->
@@ -248,6 +252,7 @@
       <p>Diseñado HTML & Tailwind CSS</p>
     </div>
   </footer>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>
